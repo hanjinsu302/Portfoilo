@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/aboutme.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div class="header1box">
+                <button>모달창</button>
+                <div class="modal">
+                    <div class="modal_header">
+
+                        <img src="../images/github_logo_icon_147285.png" class="modal_logo"/>
+                        <button class="close_button">X</button>
+                    </div>
+                    <div class="modal_content" 
+                        title="클릭하면 창이 닫힙니다.">
+                        <a href="../index.html" class="modal_content_link">
+                            <img src="../images/home.png" class="modal_link_img"/>
+                            Home
+                        </a>
+                        <a href="../page/aboutme.html" class="modal_content_link">
+                            <img src="../images/import_contacts.png" class="modal_link_img"/>
+                            About Me</a>
+                        <a href="../page/project.html" class="modal_content_link">
+                            <img src="../images/header.png" class="modal_link_img"/>
+                            Project</a>
+                        <a class="modal_content_link">
+                            <img src="../images/star.png" class="modal_link_img"/>
+                            Contact</a>
+                        <hr class="modal_hr"/>
+                        <span class="modal_content_project">Project</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header2box">
+                <a href="../index.html" class="header2box_span">
+                    <img class="header2box_img" src="../images/home.png"/>
+                    Home</a>
+                <a href="../page/aboutme.html" class="header2box_span">
+                    <img class="header2box_img" src="../images/import_contacts.png"/>
+                    About Me</a>
+                <a href="../page/project.html" class="header2box_span">
+                    <img class="header2box_img" src="../images/header.png"/>
+                    Project</a>
+                <a class="header2box_span">
+                    <img class="header2box_img" src="../images/star.png"/>
+                    Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_green_box">
+            <span class="main_green_box_text"><strong> hanjinsu302/hanjinsu302</strong> is a special repository: its README.md will appear on your profile!</span>
+        </div>
+        <div class="main_commit_container">
+            <div class="main_commit_box1">
+                <span class="main_commit_box1_span1">hanjinsu302 /</span>
+                <div class="main_commit_box1_div">
+                   <span class="main_commit_box1_div_span">READ.md</span> 
+                </div>
+                <spa class="main_commit_box1_span2">in</spa>
+                <span class="main_commit_box1_span3">main</span>
+            </div>
+            <div class="main_commit_box2">
+                <div class="main_commit_box2_div1">
+                    <span class="main_commit_box2_div_text"> Cancel changes</span>
+                </div>
+                <div class="main_commit_box2_div2">
+                    <span class="main_commit_box2_div_text">Commit changes...</span>
+                </div>
+            </div>
+        </div>
+        <div class="main_about_contain">
+            <div class="main_about_preview">
+                <div class="main_about_preview_div1">
+                    Edit
+                </div>
+                <div class="main_about_preview_div2">
+                    Preview
+                </div>
+            </div>
+
+            <h1>안녕하세요 한진수 입니다.</h1>
+        </div>
+    </main>
+    <script>
+         $(function () {
+        $("button").click(function () {
+            $(".modal").fadeIn();
+        });
+
+        $(".modal_content").click(function (event) {
+            event.stopPropagation();
+        });
+        
+
+        $(".modal, .close_button").click(function () {
+            $(".modal").fadeOut();
+        });
+    });
+    
+    </script>
+</body>
+</html>

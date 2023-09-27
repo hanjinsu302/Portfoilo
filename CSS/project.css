@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #0D1117;
+    display: flex;
+    width: 100%;
+   
+}
+.mainbox1{
+    background-color: #0D1117;
+    width: 30%;
+    height: 100%;
+    
+}
+.mainbox1_profile{
+    background-color: #0D1117;
+    width: 100%;
+}
+.mainbox1_profile_img_box{
+    margin-top: 3vw;
+    display: flex;
+    margin-left: 6vw;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+   
+}
+.mainbox1_profile_img{
+    z-index: 2;
+    background-color: #E3EAF0;
+    width: 80%;
+    border-radius: 50%;
+}
+.mainbox1_profile_span_box{
+    margin-top: 1vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    
+}
+.mainbox1_profile_span1{
+    font-size: 2vw;
+    color: #E3EAF0;
+}
+.mainbox1_profile_span2{
+    font-size: 1.5vw;
+    color: #7D8591;
+}
+.mainbox1_profile_text_box{
+    display: flex;
+    justify-content: end;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 30vw;
+}
+.mainbox1_profile_text{
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkblue; */
+    width: 70%;
+}
+.mainbox1_editbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.5vw;
+    border-radius: 10px;
+    background-color: #21262D;
+    border: 2px solid #21262D;
+    color: #E3EAF0;
+    font-size: 1vw;
+    font-style: bold;
+    margin-bottom: 2vw;
+}
+.mainbox1_editbox:hover{
+    background-color: #30363D;
+    color: #C9D1D9;
+    border: 2px solid #8C949E;
+}
+.mainbox1_profile_text_span{
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    color: #E3EAF0;
+    margin-bottom: 0.5vw;
+}
+.mainbox1_profile_text_span_img{
+    width: 8%;
+    margin-right: 0.5vw;
+}
+.mainbox1_hr{
+    border: 1px solid #21262D;
+}
+
+.mainbox1_profile_text_span2{
+    font-size: 1.5vw;
+    color: #E3EAF0;
+}
+.mainbox1_organizations_box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3vw;
+}
+.mainbox1_organizations{
+    margin-left: 0.3vw;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.mainbox1_organizations_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.mainbox2_container{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    background-color: #0D1117;
+    width: 70%;
+}
+.mainbox2{
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: max-content;
+    border: 1px solid #21262D;
+    border-radius: 0.375rem;
+}
+.mainbox2_project1{
+    margin-top: 1vw;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+    width: 95%;
+    height: max-content;
+}
+.mainbox2_project1_box{
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+    border: 1px solid #30363D;
+    width: 40%;
+    height: max-content;
+}
+.mainbox2_project1_imgbox{
+    border-radius: 0.5vw 0.5vw 0 0;
+    width: 100%;
+    height: 45%;
+}
+.mainbox2_project1_img{
+    border-radius: 0.5vw 0.5vw 0 0;
+    width: 100%;
+    height: 100%;
+}
+.mainbox2_project1_textbox{
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+    height: 35%;
+}
+.mainbox2_project1_btnbox{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+     width: 100%;
+    height: 20%;
+    display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:0 0 0.5vw 0.5vw ;
+}
+.mainbox2_project1_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E3EAF0;
+    font-size: 1vw;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 0.5vw ;
+    border: 1px solid #30363D;
+    text-decoration-line: none;
+}
+.mainbox2_project1_texthead, 
+.mainbox2_project1_textinfo,
+.mainbox2_project1_textskill{
+    margin-left: 1vw;
+    color: #C9D1D9;
+    font-size: 1vw;
+}
+.mainbox2_project1_texthead,
+.mainbox2_project1_textskill{
+    margin-top: 1vw;
+    font-size: 1.2vw;
+}
