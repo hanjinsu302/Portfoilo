@@ -56,8 +56,8 @@ main{
     align-items: center;
     background-color: #21262D;
     width: max-content;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6 ,m    vw;
     padding-top: 0.2vw;
     padding-bottom: 0.2vw;
     font-size: 1vw;
@@ -67,7 +67,7 @@ main{
     border: 1px solid #363b42;
 }
 .mainheader_pin{
-    margin-left: 33vw;
+    margin-left: 32vw;
 }
 .mainheader_hr{
     width: 85%;
@@ -274,11 +274,16 @@ li{
 
 
 @media screen and (max-width: 767px){
+    .main_box1_body_title{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
     .mainheader{
         display: none;
     }
     .main_box1_header{
         display: none;
+       
     }
     .main_container{
         width: 95%;
@@ -298,11 +303,19 @@ li{
         width: 100%;
     }
     .main_box1_body_header_box1{
+        display: none;
+        
         width: 40%;
     } 
     .main_box1_body_header_box2 {
+        display: none;
         width: 60%;
     }
+    .main_box1_body_hr{
+        margin: 0;
+    }
+    
+
 }
 
 
