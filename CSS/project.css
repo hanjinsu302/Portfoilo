@@ -185,8 +185,8 @@ main{
     justify-content: center;
     color: #E3EAF0;
     font-size: 1vw;
-    width: 8vw;
-    height: 3vw;
+    width: 40%;
+    height: 90%;
     border-radius: 0.5vw ;
     border: 1px solid #30363D;
     text-decoration-line: none;
@@ -202,4 +202,97 @@ main{
 .mainbox2_project1_textskill{
     margin-top: 1vw;
     font-size: 1.2vw;
+}
+
+@media screen and (max-width: 767px){
+    main{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .mainbox1{
+        width: 100%;
+        height: max-content;
+      }
+      .mainbox1_profile{
+        width: 100%;
+        height: max-content;
+      }
+      .mainbox1_profile_img_box{
+        height: max-content;
+        width: 100%;
+        height: 30vw;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        justify-content: start;
+        align-items: center;
+      }
+      .mainbox1_profile_span_box{
+        margin-left:5vw;
+        width: max-content;
+      }
+      .mainbox1_profile_span1{
+        font-size: 4vw;
+      }
+      .mainbox1_profile_span2{
+        font-size: 3.5vw;
+      }
+      .mainbox1_profile_text{
+       justify-content: center;
+       align-items: center;
+      }
+      .mainbox1_profile_img{
+        margin-left: 5vw;
+        width: 15%;
+      }
+      .mainbox1_profile_text_box{
+        display: none;
+        width: 100%;
+        height: max-content;
+        justify-content: center;
+      }
+      .mainbox1_profile_text{
+        width: 90%;
+        height: max-content;
+    
+      }
+      .mainbox1_editbox{
+        width: 100%;
+        height: 7vw;
+      }
+      .mainbox1_profile_text_span_box{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .mainbox1_profile_text_span_img{
+        width: 15%;
+      }
+      .mainbox1_profile_text_span{
+        font-size: 3vw;
+      }
+      .mainbox1_profile_text_span2,
+      .mainbox1_organizations_box{
+        display: none;
+      }
+   
+    .mainbox2_container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainbox2{
+        width: 95%;
+    }
+    .mainbox2_project1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainbox2_project1_box{
+        width: 90%;
+        margin-top: 1vw;
+    }
 }

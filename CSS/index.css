@@ -141,7 +141,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 85%;
     height: 99%;
     border: 1px solid #21262D;
@@ -153,6 +153,10 @@ main{
     height: 26vw;
 }
 .mainbox2_color_text{
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  width: 95%;
     color: #E3EAF0;
     font-size: 0.9vw;
     
@@ -409,6 +413,7 @@ main{
   }
 @media screen and (max-width: 767px){
   main{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -451,6 +456,7 @@ main{
   }
   .mainbox1_profile_text_box{
     width: 100%;
+    height: max-content;
     justify-content: center;
   }
   .mainbox1_profile_text{
@@ -472,6 +478,10 @@ main{
   }
   .mainbox1_profile_text_span{
     font-size: 3vw;
+  }
+  .mainbox1_profile_text_span2,
+  .mainbox1_organizations_box{
+    display: none;
   }
   .mainbox2_container{
     width: 100%;
