@@ -212,6 +212,11 @@ main{
     border-radius: 0.5vw;
     font-size: 1.5vw;
 }
+footer{
+  width: 100%;
+  height: 25vh;
+  background-color: #0e26db;
+}
 
 /*-------*/
 #container {
@@ -413,7 +418,7 @@ main{
   }
 @media screen and (max-width: 767px){
   main{
-    
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,7 +434,7 @@ main{
   .mainbox1_profile_img_box{
     height: max-content;
     width: 100%;
-    height: 30vw;
+    height: 25vw;
     display: flex;
     flex-direction: row;
     margin-left: 0;
@@ -467,6 +472,7 @@ main{
   .mainbox1_editbox{
     width: 100%;
     height: 7vw;
+    font-size: 5vw;
   }
   .mainbox1_profile_text_span_box{
     width: 100%;
@@ -485,16 +491,25 @@ main{
   }
   .mainbox2_container{
     width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 
   }
   .mainbox2{
-    height: 100vw;
+    height: 40vh;
     width: 95%;
     margin-bottom: 2vw;
     
+  }
+  .mainbox2_btn{
+    width: 40%;
+    height: 5vh;
+    font-size: 5vw;
+  }
+  footer{
+    height: 13vh;
   }
   
 }

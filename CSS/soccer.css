@@ -57,7 +57,7 @@ main{
     background-color: #21262D;
     width: max-content;
     padding-left: 0.6vw;
-    padding-right: 0.6 ,m    vw;
+    padding-right: 0.6vw;
     padding-top: 0.2vw;
     padding-bottom: 0.2vw;
     font-size: 1vw;
@@ -312,9 +312,20 @@ li{
         width: 60%;
     }
     .main_box1_body_hr{
-        margin: 0;
+        margin: 2vw;
     }
-    
+    .main_box1_body_info_tilte{
+        font-size: 7vw;
+    }
+    .main_box1_body_info{
+        font-size: 4vw;
+    }
+    .main_box2_container_title{
+        font-size: 7vw;
+    }
+    .main_box2_container_subtitle{
+        font-size: 5vw;
+    }
 
 }
 
