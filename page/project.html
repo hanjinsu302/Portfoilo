@@ -8,15 +8,24 @@
   <title>Document</title>
   <link rel="stylesheet" href="../CSS/project.css" />
   <link rel="stylesheet" href="../CSS/header.css" />
+  <script defer src="../JS/header.js" > </script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="headercontainer">
-
       <div class="header1box">
-        <button>모달창</button>
+        <div class="modalbtn">
+          <img src="../images/hamburger.png" class="modalbtnimg"/>
+       </div>
+       <div class="modallogo">
+           <img src="../images/github_logo_icon_147285.png" class="modallogoimg"/>
+       </div>
+       <div class="modalname">
+           <span class="modalnametext">hanjinsu302</span>
+
+       </div>
         <div class="modal">
           <div class="modal_header">
 
@@ -131,7 +140,7 @@
                     <span class="mainbox2_project1_textskill">#Jquery&nbsp; #G-SAP</span>
                 </div>
                 <div class="mainbox2_project1_btnbox">
-                    <a class="mainbox2_project1_btn">상세보기</a>
+                    <a href="./nottrash.html" class="mainbox2_project1_btn">상세보기</a>
                     <a href="https://notrash.netlify.app/" class="mainbox2_project1_btn">Demo</a>
                 </div>
             </div>
@@ -150,7 +159,7 @@
                     <span class="mainbox2_project1_textskill">#MYSQL&nbsp; #SCSS &nbsp; #Socket.io</span>
                 </div>
                 <div class="mainbox2_project1_btnbox">
-                    <a class="mainbox2_project1_btn">상세보기</a>
+                    <a href="./chat.html" class="mainbox2_project1_btn">상세보기</a>
                     <a class="mainbox2_project1_btn">Demo</a>
                 </div>
             </div>
@@ -166,7 +175,7 @@
                     <span class="mainbox2_project1_textskill">#MYSQL&nbsp; #Node.js &nbsp; #express </span>
                 </div>
                 <div class="mainbox2_project1_btnbox">
-                    <a class="mainbox2_project1_btn">상세보기</a>
+                    <a href="./dogdaze.html" class="mainbox2_project1_btn">상세보기</a>
                     <a href="http://3.37.27.147/" class="mainbox2_project1_btn">Demo</a>
                 </div>
             </div>
@@ -176,22 +185,6 @@
       </div>
     </div>
   </main>
-  <script>
-    $(function() {
-      $("button").click(function() {
-        $(".modal").fadeIn();
-      });
-
-      $(".modal_content").click(function(event) {
-        event.stopPropagation();
-      });
-
-
-      $(".modal, .close_button").click(function() {
-        $(".modal").fadeOut();
-      });
-    });
-  </script>
 </body>
 
 </html>

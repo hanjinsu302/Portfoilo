@@ -7,14 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/header.css" />
+    <script defer src="./JS/header.js" > </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="headercontainer">
-
             <div class="header1box">
-                <button>모달창</button>
+                <div class="modalbtn">
+                   <img src="./images/hamburger.png" class="modalbtnimg"/>
+                </div>
+                <div class="modallogo">
+                    <img src="./images/github_logo_icon_147285.png" class="modallogoimg"/>
+                </div>
+                <div class="modalname">
+                    <span class="modalnametext">hanjinsu302</span>
+
+                </div>
                 <div class="modal">
                     <div class="modal_header">
 
@@ -128,29 +137,18 @@
                     <a class="mainbox2_btn">Contact Me</a>
                 </div>
             </div>
+            
         </div>
     </main>
+    <section class="section1">
+
+    </section>
+
     <footer>
         
     </footer>
     
 
-    <script>
-        $(function () {
-        $("button").click(function () {
-            $(".modal").fadeIn();
-        });
-
-        $(".modal_content").click(function (event) {
-            event.stopPropagation();
-        });
-        
-
-        $(".modal, .close_button").click(function () {
-            $(".modal").fadeOut();
-        });
-    });
-    </script>
     
 </body>
 </html>

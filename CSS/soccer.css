@@ -250,10 +250,9 @@ main{
     color: aliceblue;
 }
 .main_box2_container_subtitle_a{
-    width: 55%;
+    
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 .main_box2_container{
     display: flex;
@@ -263,10 +262,11 @@ main{
 }
 .main_box2_container_linkimg{
     width: 1.5vw;
+    margin-right:1vw;
 }
 li{
     color: aliceblue;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 .main_box2_container_img{
     width: 100%;
@@ -324,6 +324,10 @@ li{
         font-size: 7vw;
     }
     .main_box2_container_subtitle{
+        font-size: 5vw;
+    }
+    li{
+        color: aliceblue;
         font-size: 5vw;
     }
 

@@ -7,56 +7,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/aboutme.css" />
     <link rel="stylesheet" href="../CSS/header.css" />
+    <script defer src="../JS/header.js" > </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="headercontainer">
-
-            <div class="header1box">
-                <button>모달창</button>
-                <div class="modal">
-                    <div class="modal_header">
-
-                        <img src="../images/github_logo_icon_147285.png" class="modal_logo"/>
-                        <button class="close_button">X</button>
-                    </div>
-                    <div class="modal_content" 
-                        title="클릭하면 창이 닫힙니다.">
-                        <a href="../index.html" class="modal_content_link">
-                            <img src="../images/home.png" class="modal_link_img"/>
-                            Home
-                        </a>
-                        <a href="../page/aboutme.html" class="modal_content_link">
-                            <img src="../images/import_contacts.png" class="modal_link_img"/>
-                            About Me</a>
-                        <a href="../page/project.html" class="modal_content_link">
-                            <img src="../images/header.png" class="modal_link_img"/>
-                            Project</a>
-                        <a class="modal_content_link">
-                            <img src="../images/star.png" class="modal_link_img"/>
-                            Contact</a>
-                        <hr class="modal_hr"/>
-                        <span class="modal_content_project">Project</span>
-                    </div>
-                </div>
+          <div class="header1box">
+            <div class="modalbtn">
+              <img src="../images/hamburger.png" class="modalbtnimg"/>
+           </div>
+           <div class="modallogo">
+               <img src="../images/github_logo_icon_147285.png" class="modallogoimg"/>
+           </div>
+           <div class="modalname">
+               <span class="modalnametext">hanjinsu302</span>
+    
+           </div>
+            <div class="modal">
+              <div class="modal_header">
+    
+                <img src="../images/github_logo_icon_147285.png" class="modal_logo" />
+                <button class="close_button">X</button>
+              </div>
+              <div class="modal_content" title="클릭하면 창이 닫힙니다.">
+                <a href="../index.html" class="modal_content_link">
+                  <img src="../images/home.png" class="modal_link_img" />
+                  Home
+                </a>
+                <a href="../page/aboutme.html" class="modal_content_link">
+                  <img src="../images/import_contacts.png" class="modal_link_img" />
+                  About Me</a>
+                <a href="../page/project.html" class="modal_content_link">
+                  <img src="../images/header.png" class="modal_link_img" />
+                  Project</a>
+                <a class="modal_content_link">
+                  <img src="../images/star.png" class="modal_link_img" />
+                  Contact</a>
+                <hr class="modal_hr" />
+                <span class="modal_content_project">Project</span>
+              </div>
             </div>
-            <div class="header2box">
-                <a href="../index.html" class="header2box_span">
-                    <img class="header2box_img" src="../images/home.png"/>
-                    Home</a>
-                <a href="../page/aboutme.html" class="header2box_span">
-                    <img class="header2box_img" src="../images/import_contacts.png"/>
-                    About Me</a>
-                <a href="../page/project.html" class="header2box_span">
-                    <img class="header2box_img" src="../images/header.png"/>
-                    Project</a>
-                <a class="header2box_span">
-                    <img class="header2box_img" src="../images/star.png"/>
-                    Contact</a>
-            </div>
+          </div>
+          <div class="header2box">
+            <a href="../index.html" class="header2box_span">
+              <img class="header2box_img" src="../images/home.png" />
+              Home</a>
+            <a href="../page/aboutme.html" class="header2box_span">
+              <img class="header2box_img" src="../images/import_contacts.png" />
+              About Me</a>
+            <a href="../page/project.html" class="header2box_span">
+              <img class="header2box_img" src="../images/header.png" />
+              Project</a>
+            <a class="header2box_span">
+              <img class="header2box_img" src="../images/star.png" />
+              Contact</a>
+          </div>
         </div>
-    </header>
+      </header>
 
     <main>
         <div class="main_green_box">
@@ -93,22 +101,6 @@
             <h1>안녕하세요 한진수 입니다.</h1>
         </div>
     </main>
-    <script>
-         $(function () {
-        $("button").click(function () {
-            $(".modal").fadeIn();
-        });
-
-        $(".modal_content").click(function (event) {
-            event.stopPropagation();
-        });
-        
-
-        $(".modal, .close_button").click(function () {
-            $(".modal").fadeOut();
-        });
-    });
-    
-    </script>
+  
 </body>
 </html>
