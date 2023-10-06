@@ -1,154 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <link rel="stylesheet" href="./CSS/header.css" />
-    <script defer src="./JS/header.js" > </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/index.css" />
+  <link rel="stylesheet" href="./CSS/index.css" />
+  <link rel="stylesheet" href="./CSS/header.css" />
+  <script defer src="./JS/header.js"> </script>
+  <script defer src="./JS/index.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
-    <header>
-        <div class="headercontainer">
-            <div class="header1box">
-                <div class="modalbtn">
-                   <img src="./images/hamburger.png" class="modalbtnimg"/>
-                </div>
-                <div class="modallogo">
-                    <img src="./images/github_logo_icon_147285.png" class="modallogoimg"/>
-                </div>
-                <div class="modalname">
-                    <span class="modalnametext">hanjinsu302</span>
-
-                </div>
-                <div class="modal">
-                    <div class="modal_header">
-
-                        <img src="./images/github_logo_icon_147285.png" class="modal_logo"/>
-                        <button class="close_button">X</button>
-                    </div>
-                    <div class="modal_content" 
-                        title="클릭하면 창이 닫힙니다.">
-                        <a href="./index.html" class="modal_content_link">
-                            <img src="./images/home.png" class="modal_link_img"/>
-                            Home
-                        </a>
-                        <a href="./page/aboutme.html" class="modal_content_link">
-                            <img src="./images/import_contacts.png" class="modal_link_img"/>
-                            About Me</a>
-                        <a href="./page/project.html" class="modal_content_link">
-                            <img src="./images/header.png" class="modal_link_img"/>
-                            Project</a>
-                        <a class="modal_content_link">
-                            <img src="./images/star.png" class="modal_link_img"/>
-                            Contact</a>
-                        <hr class="modal_hr"/>
-                        <span class="modal_content_project">Project</span>
-                    </div>
-                </div>
-            </div>
-            <div class="header2box">
-                <a href="./index.html" class="header2box_span">
-                    <img class="header2box_img" src="./images/home.png"/>
-                    Home</a>
-                <a href="./page/aboutme.html" class="header2box_span">
-                    <img class="header2box_img" src="./images/import_contacts.png"/>
-                    About Me</a>
-                <a href="./page/project.html" class="header2box_span">
-                    <img class="header2box_img" src="./images/header.png"/>
-                    Project</a>
-                <a class="header2box_span">
-                    <img class="header2box_img" src="./images/star.png"/>
-                    Contact</a>
-            </div>
+  <header>
+    <div class="headercontainer">
+      <div class="header1box">
+        <div class="modalbtn">
+          <img src="./images/hamburger.png" class="modalbtnimg" />
         </div>
-    </header>
-
-
-    <main>
-        <div class="mainbox1">
-            <div class="mainbox1_profile">
-                <div class="mainbox1_profile_img_box">
-                   
-                    <img class="mainbox1_profile_img" src="./images/E3D813DB-AD79-4F11-B804-5807DA49EDDA.jpeg"/>
-            
-                    <div class="mainbox1_profile_span_box">
-                        <span class="mainbox1_profile_span1">Han Jin su</span>
-                        <span class="mainbox1_profile_span2">hanjinsu302</span>
-                    </div>
-                </div>
-                <div class="mainbox1_profile_text_box">
-                    <div class="mainbox1_profile_text">
-                        <div class="mainbox1_editbox">Edit Profile</div>
-                        <div class="mainbox1_profile_text_span_box">
-                            <span class="mainbox1_profile_text_span">
-                                <img src="./images/apartment.png" class="mainbox1_profile_text_span_img"/>
-                                looking for a job</span>
-                            <span class="mainbox1_profile_text_span">
-                                <img src="./images/home_pin.png" class="mainbox1_profile_text_span_img"/>
-                                Seoul</span>
-                            <span class="mainbox1_profile_text_span">
-                                <img src="./images/link.png" class="mainbox1_profile_text_span_img"/>
-                                jinsu302@naver.com</span>
-                        </div>
-                       
-                            <br>
-                            <hr class="mainbox1_hr">
-                            <br>
-                        <span class="mainbox1_profile_text_span2">Organizations</span>
-                        <div class="mainbox1_organizations_box">
-                            <div class="mainbox1_organizations">
-                                <img src="./images/codingon-logo.webp" class="mainbox1_organizations_img"/>
-                            </div>
-                            <div class="mainbox1_organizations">
-                                <img src="./images/logo.png" class="mainbox1_organizations_img"/>
-                            </div>
-                            <div class="mainbox1_organizations">
-                                <img src="./images/inflearn.png" class="mainbox1_organizations_img"/>
-                            </div>
-                            
-                        </div>
-                        </div>
-                </div>
-            </div>
+        <div class="modallogo">
+          <img src="./images/github_logo_icon_147285.png" class="modallogoimg" />
         </div>
-        <div class="mainbox2_container">
-            <div class="mainbox2">
-                <div class="mainbox2_color_text">hanjinsu302 / README.md</div>
-                <div class="mainbox2_color_box">
-                    <div class="mainbox2_color_img_box">
-                        <div id="container">
-                            <h1>Hi! I'm Jinsu</h1>
-                            <h1>Hi! I'm Jinsu</h1>
-                            <h1>Hi! I'm Jinsu</h1>
-                        </div>
-                        <img class="mainbox2_color_img" src="./images/maingit.png"/>
-                    </div>
-                </div>
-                <div class="mainbox2_text_box">
-                    <span class="mainbox2_text_box_span">Front-End Developer</span>
-                    <span class="mainbox2_text_box_span">Port-folio</span>
-                </div>
-                <div class="mainbox2_btn_box">
-                    <a class="mainbox2_btn">Project</a>
-                    <a class="mainbox2_btn">Contact Me</a>
-                </div>
-            </div>
-            
+        <div class="modalname">
+          <span class="modalnametext">hanjinsu302</span>
         </div>
-    </main>
-    <section class="section1">
+        <div class="modal">
+          <div class="modal_header">
+            <img src="./images/github_logo_icon_147285.png" class="modal_logo" />
+            <button class="close_button">X</button>
+          </div>
+          <div class="modal_content" title="클릭하면 창이 닫힙니다.">
+            <a href="./index.html" class="modal_content_link">
+              <img src="./images/home.png" class="modal_link_img" />
+              Home
+            </a>
+            <a href="./page/aboutme.html" class="modal_content_link">
+              <img src="./images/import_contacts.png" class="modal_link_img" />
+              About Me</a>
+            <a href="./page/project.html" class="modal_content_link">
+              <img src="./images/header.png" class="modal_link_img" />
+              Project</a>
+            <a class="modal_content_link">
+              <img src="./images/star.png" class="modal_link_img" />
+              Contact</a>
+            <hr class="modal_hr" />
+            <span class="modal_content_project">Project</span>
+          </div>
+        </div>
+      </div>
+      <div class="header2box">
+        <a href="./index.html" class="header2box_span">
+          <img class="header2box_img" src="./images/home.png" />
+          Home</a>
+        <a href="./page/aboutme.html" class="header2box_span">
+          <img class="header2box_img" src="./images/import_contacts.png" />
+          About Me</a>
+        <a href="./page/project.html" class="header2box_span">
+          <img class="header2box_img" src="./images/header.png" />
+          Project</a>
+        <a class="header2box_span">
+          <img class="header2box_img" src="./images/star.png" />
+          Contact</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="mainbox1">
+      <div class="mainbox1_profile">
+        <div class="mainbox1_profile_img_box">
+          <img class="mainbox1_profile_img" src="./images/E3D813DB-AD79-4F11-B804-5807DA49EDDA.jpeg" />
+          <div class="mainbox1_profile_span_box">
+            <span class="mainbox1_profile_span1">Han Jin su</span>
+            <span class="mainbox1_profile_span2">hanjinsu302</span>
+          </div>
+        </div>
+        <div class="mainbox1_profile_text_box">
+          <div class="mainbox1_profile_text">
+            <div class="mainbox1_editbox">Edit Profile</div>
+            <div class="mainbox1_profile_text_span_box">
+              <span class="mainbox1_profile_text_span">
+                <img src="./images/apartment.png" class="mainbox1_profile_text_span_img" />
+                looking for a job</span>
+              <span class="mainbox1_profile_text_span">
+                <img src="./images/home_pin.png" class="mainbox1_profile_text_span_img" />
+                Seoul</span>
+              <span class="mainbox1_profile_text_span">
+                <img src="./images/link.png" class="mainbox1_profile_text_span_img" />
+                jinsu302@naver.com</span>
+            </div>
+            <br>
+            <hr class="mainbox1_hr">
+            <br>
+            <span class="mainbox1_profile_text_span2">Organizations</span>
+            <div class="mainbox1_organizations_box">
+              <div class="mainbox1_organizations">
+                <img src="./images/codingon-logo.webp" class="mainbox1_organizations_img" />
+              </div>
+              <div class="mainbox1_organizations">
+                <img src="./images/logo.png" class="mainbox1_organizations_img" />
+              </div>
+              <div class="mainbox1_organizations">
+                <img src="./images/inflearn.png" class="mainbox1_organizations_img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainbox2_container">
+      <div class="mainbox2">
+        <div class="mainbox2_color_text">hanjinsu302 / README.md</div>
+        <div class="mainbox2_color_box">
+          <div class="mainbox2_color_img_box" id="bg">
+            <div id="container">
+              <h1>Hi! I'm Jinsu</h1>
+              <h1>Hi! I'm Jinsu</h1>
+              <h1>Hi! I'm Jinsu</h1>
+            </div>
+            <img class="mainbox2_color_img" src="./images/frame1234.png" />
+          </div>
+        </div>
+        <div class="mainbox2_text_box">
+          <span class="mainbox2_text_box_span">Front-End Developer</span>
+          <span class="mainbox2_text_box_span">Port-folio</span>
+        </div>
+        <div class="mainbox2_btn_box">
+          <a class="mainbox2_btn">Project</a>
+          <a class="mainbox2_btn">Contact Me</a>
+        </div>
+      </div>
 
-    </section>
+    </div>
+  </main>
+  <section class="section1">
+    <div class="section1_box1">
+        <span class="section1_box1_text">안녕하세요.</span>
+        <span class="section1_box1_text1" >나아갈 수 있는 길을 구현하고 해결 방안 공유하고 싶은 개발을 좋아하는</span>
+        <span class="section1_box1_text1">주니어 프론트 엔드 개발자 한진수 입니다.</span>
 
-    <footer>
-        
-    </footer>
-    
+    </div>
+    <div class="section1_box2">
+      <ul class='tags-cloud'>
+        <li class='tag' style="color: #DD2B24;"><span class='wrap'>HTML</span></li>
+        <li class='tag' style="color: #2e53e6;"><span class='wrap'>CSS</span></li>
+        <li class='tag' style="color: #f7e129;"><span class='wrap'>JavaScript</span></li>
+        <li class='tag' style="color: #66dcfb;"><span class='wrap'>React</span></li>
+        <li class='tag' style="color: #90c713;"><span class='wrap'>Node.js</span></li>
+        <li class='tag' style="color: #09668f;"><span class='wrap'>MySQL</span></li>
+        <li class='tag' style="color: #d1699d;"><span class='wrap'>SCSS</span></li>
+        <li class='tag' style="color: #721df4;"><span class='wrap'>Bootstrap</span></li>
+        <li class='tag' style="color: #E3EAF0;"><span class='wrap'>Git hub</span></li>
+        <li class='tag' style="color: #501c51;"><span class='wrap'>Slack</span></li>
+        <li class='tag' style="color: #168d07;"><span class='wrap'>Figma</span></li>
+      </ul>
+    </div>
+  </section>
 
-    
+  <footer>
+
+  </footer>
+
+
+
 </body>
+
 </html>
