@@ -528,88 +528,69 @@ footer{
 
 .section2{
   width: 100%;
-  height: 100vh;
+  height: max-content;
   background-color: #0D1117;
 }
 
-.tabs {
-  position:relative;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:80vw;
-  height:35vw;
-  background:#0D1117;
-  padding:20px 30px;
-  overflow:hidden;
-  border-radius:50px;
-  border: 2px solid #21262D;
-  /* box-shadow:5px 10px 5px #ccc; */
-}
-.tabs .tab-header {
-  height:60px;
+
+.tabskillcontainer{
+  width: 100%;
+  height: 50vh;
   display:flex;
-  align-items:center;
 }
-.tabs .tab-header > div {
-  width:calc(100% / 4);
-  text-align:center;
-  color:#888;
-  font-weight:600;
-  cursor:pointer;
-  font-size:14px;
-  text-transform:uppercase;
-  outline:none;
+.tabskillbox1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  height: 100%;
+ 
 }
-.tabs .tab-header > div > i {
-  display:block;
-  margin-bottom:5px;
+.tabskillbox2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
 }
-.tabs .tab-header > div.active {
-  color:#f78266;
-}
-.tabs .tab-indicator {
-  position:relative;
-  width:calc(100% / 4);
-  height:5px;
-  background:#f78266;
-  left:0px;
-  border-radius:5px;
-  transition:all 500ms ease-in-out;
-}
-.tabs .tab-body {
-  position:relative;
-  height:calc(100% - 60px);
-  padding:10px 5px;
-}
-.tabs .tab-body > div {
-  position:absolute;
-  top:-200%;
-  opacity:0;
-  transform:scale(0.9);
-  transition:opacity 500ms ease-in-out 0ms,
-    transform 500ms ease-in-out 0ms;
-}
-.tabs .tab-body > div.active {
-  top:0px;
-  opacity:1;
-  transform:scale(1);
-}
-.tabtitle{
-  font-size: 1.5vw;
-}
-.tabh2{
-  margin-top: 2vw;
-  font-size: 2vw;
-  color:#888;
-}
-.tabtext{
-  margin-top: 2vw;
-  color:#E3EAF0;
-  font-size: 2vw;
+.tabskillbox2_title{
   font-family: 'SBAggroB';
+  font-size: 2vw;
+  color:#E3EAF0;
+
+}
+.tabskillbox2_title_info{
+  font-family: 'SBAggroB';
+  color:#E3EAF0;
+
+}
+#slider {
+  overflow:hidden;
+  position:relative;
+  width:100%;  
+  height:200px;
+}
+.image-box {
+  width:max-content; 
+  height:100%;
+  display:flex;
+  flex-wrap:nowrap;
+  align-items: center;
+  animation: bannermove 15s linear infinite;
+}
+.sliderimg{
+  width: 15vw;
+  margin-left: 10vw;
 }
 
+@keyframes bannermove {
+ 0% {
+     transform: translate(0, 0);
+ }
+ 100% {
+     transform: translate(-50%, 0);
+ }
+}
 
 /* 반응형 부분 */
 @media screen and (max-width: 767px){
