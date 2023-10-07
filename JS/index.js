@@ -180,3 +180,94 @@ setInterval(function(){
   bg.style.background = "#" + color;
   
 },2000);
+
+
+
+const content1 = "<h1>안녕하세요.</h1>";
+const text1 = document.querySelector(".text1");
+text1.textContent = "";
+
+let txtIdx1 = 0;
+let animationStarted1 = false;
+
+function typing1() {
+    let txt = content1[txtIdx1++];
+    if (txt == undefined) return;
+    text1.innerHTML += txt === "\n" ? "<br/>" : txt;
+    if (txtIdx1 > content1.length) {
+        txtIdx1 = 0;
+    } else {
+        setTimeout(typing1, 100);
+    }
+}
+
+function startTypingAnimation1() {
+    if (!animationStarted1) {
+        typing1();
+        animationStarted1 = true;
+    }
+}
+
+const scrollStartPos1 = 600; // Adjust this value based on your requirements
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    if (scrollY >= scrollStartPos1) {
+        startTypingAnimation1();
+    }
+});
+
+const content2 = "나아갈 수 있는 길을 구현하고 해결 방안 공유하고 싶은 개발자.  <a>주니어 프론트 엔드 개발자 한진수 입니다.</a>";
+const text2 = document.querySelector(".text2");
+text2.textContent = "";
+
+let txtIdx2 = 0;
+let animationStarted2 = false;
+
+function typing2() {
+    let txt = content2[txtIdx2++];
+    if (txt == undefined) return;
+    text2.innerHTML += txt === "\n" ? "<br/>" : txt;
+    if (txtIdx2 > content2.length) {
+        txtIdx2 = 0;
+    } else {
+        setTimeout(typing2, 70);
+    }
+}
+
+function startTypingAnimation2() {
+    if (!animationStarted2) {
+        typing2();
+        animationStarted2 = true;
+    }
+}
+
+const scrollStartPos2 = 730; // Adjust this value based on your requirements
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    if (scrollY >= scrollStartPos2) {
+        startTypingAnimation2();
+    }
+});
+
+
+
+
+
+let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
+
+let tabsPane = tabHeader.getElementsByTagName("div");
+
+for(let i=0;i<tabsPane.length;i++){
+  tabsPane[i].addEventListener("click",function(){
+    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+    tabsPane[i].classList.add("active");
+    tabBody.getElementsByClassName("active")[0].classList.remove("active");
+    tabBody.getElementsByTagName("div")[i].classList.add("active");
+    
+    tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+  });
+}
