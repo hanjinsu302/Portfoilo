@@ -258,7 +258,8 @@
     .projectbox_project1_box{
         width: 95%;
        max-height: 70vh;
-        margin-top: 1vw;
+        margin-top: 2.5vh;
+        padding-bottom: 2vh;
     }
     .projectbox_project1_texthead{
         font-size: 7vw;
@@ -268,6 +269,9 @@
     }
     .projectbox_project1_textskill{
         font-size: 5vw;
+    }
+    .projectbox_project1_btnbox{
+        margin-top: 1.5vh;
     }
     .projectbox_project1_btn{
        min-height: 5vh;
