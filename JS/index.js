@@ -1,15 +1,11 @@
 class FibonacciSphere {
   #points;
-
   get points() {
       return this.#points;
   }
-
   constructor(N) {
       this.#points = [];
-
       const goldenAngle = Math.PI * (3 - Math.sqrt(5));
-
       for (let i = 0; i < N; i++) {
           const y = 1 - (i / (N - 1)) * 2;
           const radius = Math.sqrt(1 - y ** 2);
@@ -23,6 +19,7 @@ class FibonacciSphere {
 }
 
 
+///나의 키워드 js2
 class TagsCloud {
   #root;
   #size;
@@ -139,7 +136,7 @@ class TagsCloud {
   }
 }
 
-
+//나의 키워드 js2
 function main() {
   {
       const root = document.querySelector('.tags-cloud');
@@ -162,8 +159,6 @@ function main() {
       });
   }
 }
-
-
 document.addEventListener('DOMContentLoaded', () => {
   main();
 });
@@ -182,7 +177,7 @@ setInterval(function(){
 },2000);
 
 
-
+//about me js
 const content1 = "<h1>안녕하세요.</h1>";
 const text1 = document.querySelector(".text1");
 text1.textContent = "";
@@ -217,7 +212,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-const content2 = "나아갈 수 있는 길을 구현하고 해결 방안 공유하고 싶은 개발자.  <a>프론트 엔드 개발자 한진수 입니다.</a>";
+const content2 = "단순한 코드를 뛰어넘어, 사용자의 마음을 움직이는 열정 개발자. <a>프론트 엔드 개발자 한진수 입니다.</a>";
 const text2 = document.querySelector(".text2");
 text2.textContent = "";
 
@@ -251,23 +246,28 @@ window.addEventListener("scroll", () => {
     }
 });
 
+   window.addEventListener('scroll', function() {
+      var element = document.querySelector('.section1_box1-1');
+      var triggerPosition = 800; // 나타날 위치까지의 스크롤 값
+
+      // 특정 위치로 스크롤될 때 요소를 나타나게 함
+      if (window.scrollY >= triggerPosition) {
+        element.style.display = 'block'; // 요소를 보이게 함
+      } else {
+        element.style.display = 'none'; // 요소를 숨김
+      }
+    });
+
+
+function scrollToPosition(scrollPosition) {
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+  }
 
 
 
 
-let tabHeader = document.getElementsByClassName("tab-header")[0];
-let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-let tabBody = document.getElementsByClassName("tab-body")[0];
 
-let tabsPane = tabHeader.getElementsByTagName("div");
-
-for(let i=0;i<tabsPane.length;i++){
-  tabsPane[i].addEventListener("click",function(){
-    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-    tabsPane[i].classList.add("active");
-    tabBody.getElementsByClassName("active")[0].classList.remove("active");
-    tabBody.getElementsByTagName("div")[i].classList.add("active");
-    
-    tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
-  });
-}
+  

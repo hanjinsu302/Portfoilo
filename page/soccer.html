@@ -14,59 +14,19 @@
       </head>
 <body>
     <header>
-        <div class="headercontainer">
-          <div class="header1box">
-            <div class="modalbtn">
-              <img src="../images/hamburger.png" class="modalbtnimg"/>
-           </div>
-           <div class="modallogo">
-               <img src="../images/github_logo_icon_147285.png" class="modallogoimg"/>
-           </div>
-           <div class="modalname">
-               <span class="modalnametext">hanjinsu302</span>
-    
-           </div>
-            <div class="modal">
-              <div class="modal_header">
-                <img src="../images/github_logo_icon_147285.png" class="modal_logo" />
-                <button class="close_button">X</button>
-              </div>
-              <div class="modal_content" title="클릭하면 창이 닫힙니다.">
-                <a href="../index.html" class="modal_content_link">
-                  <img src="../images/home.png" class="modal_link_img" />
-                  Home
-                </a>
-                <a href="../page/aboutme.html" class="modal_content_link">
-                  <img src="../images/import_contacts.png" class="modal_link_img" />
-                  About Me</a>
-                <a href="../page/project.html" class="modal_content_link">
-                  <img src="../images/header.png" class="modal_link_img" />
-                  Project</a>
-                <a class="modal_content_link">
-                  <img src="../images/star.png" class="modal_link_img" />
-                  Contact</a>
-                <hr class="modal_hr" />
-                <span class="modal_content_project">Project</span>
-              </div>
-            </div>
-          </div>
-          <div class="header2box">
-            <a href="../index.html" class="header2box_span">
-              <img class="header2box_img" src="../images/home.png" />
-              Home</a>
-            <a href="../page/aboutme.html" class="header2box_span">
-              <img class="header2box_img" src="../images/import_contacts.png" />
-              About Me</a>
-            <a href="../page/project.html" class="header2box_span">
-              <img class="header2box_img" src="../images/header.png" />
-              Project</a>
-            <a class="header2box_span">
-              <img class="header2box_img" src="../images/star.png" />
-              Contact</a>
-          </div>
+        <div class="head"> 
+          <img src="../images/left-arrow.png" class="head-img"onclick="goBack()"/>
+          <div class="modallogo">
+            <img src="../images/github_logo_icon_147285.png" class="modallogoimg"/>
         </div>
-    </header>
-
+        <div class="modalname">
+            <span class="modalnametext">hanjinsu302</span>
+    
+        </div>
+        </div>
+      </header>
+       
+    
     <main>
         <div class="mainheader">
             <div class="mainheader_logo_img">
@@ -177,6 +137,11 @@
                     <li class="main_box1_body_info">구단이 보유하고 있는 팀 정보</li>
                     <li class="main_box1_body_info">구단 선수들의 능력 정보</li>
                     <li class="main_box1_body_info">구단의 매치 일정</li>
+                    <span class="main_box1_body_info_tilte">🎛 기능 구현</span>
+                    <span class="main_box1_body_info">
+                        html과 css,Javascript를 이용하여 제작 하였으며 hover효과와 여러 효과들을 사용하여
+                        시각적으로 화려하게 구현 하였습니다.
+                      </span>
                 </div>
             </div>
             <div class="main_box2">
@@ -213,7 +178,14 @@
 
         </div>
     </main>
-    
+    <footer> </footer>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+      
+  
 
 
     

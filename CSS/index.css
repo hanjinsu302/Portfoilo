@@ -391,7 +391,7 @@ main{
 footer{
   width: 100%;
   height: 25vh;
-  background-color: #0e26db;
+  background-color: #0D1117;
 }
 
 /*-------*/
@@ -441,22 +441,46 @@ footer{
   .section1_box2{
     background-color: #0D1117;
     width: 50%;
-    height: 70vh
+    height: 80vh
   }
   .section1_box1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .section1_box1_text{
     color: #E3EAF0;
     font-size: 2vw;
+    margin-top: 2vw;
     margin-left: 2vw;
   }
   .section1_box1_text1{
     color: #E3EAF0;
     font-size: 1.5vw;
     margin-left: 2vw;
+  }
+  .section1_box1-1{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+    width: 90%;
+    height: 15vw;
+    border-left:2px solid #f78266;
+  }
+  .section1_box1-1_textbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .section1_box1-1_text{
+    margin-left: 1vw;
+     color: #E3EAF0;
+     font-family: 'SBAggroB';
   }
   .section1_box2_title{
     display: flex;
@@ -469,6 +493,9 @@ footer{
     color: #E3EAF0;
     font-family: 'SBAggroB';
 
+  }
+  #box1{
+    margin-top: 5vw;
   }
   #box1,#box2{
     margin-left: 5vw;
@@ -492,6 +519,16 @@ footer{
       opacity: 0;
     }
   }
+  .section1-1{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D1117;
+  }
+
+
   
 .wrap{
   color: #E3EAF0;
@@ -692,9 +729,7 @@ footer{
     height: 5vh;
     font-size: 5vw;
   }
-  footer{
-    height: 20vh;
-  }
+  
   
   .section1{
     display: flex;
@@ -711,8 +746,18 @@ footer{
   }
   .section1_box1{
     align-items: center;
-    justify-content: center;
-    height: 30vh;
+    /* justify-content: center; */
+    height: 50vh;
+  }
+  .section1_box1-1{
+    margin-top: 7vw;
+    height: max-content;
+  }
+  .section1_box1-1_text{
+    font-size: 3vw;
+  }
+  #box1{
+    margin-top: 15vh;
   }
   #box1,#box2{
     margin-left: 1vw;
@@ -722,6 +767,9 @@ footer{
   }
   .text2{
     font-size: 4.5vw;
+  }
+  .section1_box1-1{
+    margin-top: 5vh;
   }
   .section1_box2{
     align-items: center;
@@ -743,6 +791,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: max-content;
     align-items: center;
   }
   .tabskillbox1{

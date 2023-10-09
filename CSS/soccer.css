@@ -2,6 +2,47 @@
     margin: 0;
     padding: 0;
 }
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+}
+.head{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    z-index: 10;
+}
+.head-img{
+    margin-left: 2vw;
+    width: 2vw;
+}
+.modallogo{
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 100%;
+  }
+  .modallogoimg{
+    width: 55%;
+  }
+  .modalname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+  }
+  .modalnametext{
+    font-size: 1vw;
+    font-style: bold;
+    color: #f0f6fc;
+  }
 hr{
     border-color: #363b42;
 }
@@ -152,6 +193,7 @@ main{
     /* height: max-content; */
     border: 2px solid #373b42;
     border-radius: 0.5vw;
+    padding-bottom: 5vh;
 }
 
 .main_box1_body_header{
@@ -209,13 +251,13 @@ main{
     margin-top: 1vw;
     margin-bottom: 1vw;
     width: 90%;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-size: bold;
     color: aliceblue;
 }
 .main_box1_body_info{
     width: 90%;
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-size: bold;
     color: aliceblue;
     
@@ -271,9 +313,28 @@ li{
 .main_box2_container_img{
     width: 100%;
 }
+footer{
+    width: 100%;
+    height: 25vh;
+    background-color: #0D1117;
+  }
 
 
 @media screen and (max-width: 767px){
+    .head-img{
+        width: 8vw;
+    }
+    .modallogo{
+        margin-left: 2vw;
+        width: 8vw;
+    }
+    .modallogoimg{
+        width: 100%;
+    }
+    .modalnametext{
+        margin-left: 3vw;
+        font-size: 4.5vw;
+    }
     .main_box1_body_title{
         font-size: 5vw;
         margin-bottom: 0;
