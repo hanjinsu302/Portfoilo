@@ -74,10 +74,14 @@
     border-radius: 0.375rem;
     margin-right: 2vw;
     display: flex;
-    align-items: center;
-    background-color: green;
+    align-items: center;justify-content: space-evenly;
+    background-color:#238636;
+    border: 1px solid #326840;
     width: 4.5vw;
     height: 2.5vw;
+}
+.project_top_newbox_img{
+    width: 1.5vw;
 }
 .project_top_newbox_text{
     color: #E3EAF0;
@@ -173,6 +177,9 @@
     height: max-content;
 }
 .projectbox_project1_imgbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.5vw 0.5vw 0 0;
     width: 100%;
     height: 45%;
@@ -270,4 +277,26 @@
     .project_title_box_text{
         font-size: 6vw;
     }
+    .project_top_newbox_img{
+        width: 3.5vw;
+    }
+    .project_top_newbox{
+        width: 11vw;
+        height: 4vw;
+    }
+    .project_top_box{
+        height: 10vw;
+    }
+    .project_find {
+        height: 13vw;
+    }
+    .project_find_box{
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        height: 5vw;
+    }
+    .project_repo{
+        display: none;
+    }
+   
 }
