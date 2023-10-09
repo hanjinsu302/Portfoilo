@@ -273,7 +273,7 @@ main{
     margin-bottom: 0.5vw;
 }
 .mainbox1_profile_text_span_img{
-    width: 8%;
+    width: 6%;
     margin-right: 0.5vw;
 }
 .mainbox1_hr{
@@ -544,13 +544,15 @@ footer{
   justify-content: space-around;
   width: 40%;
   height: 100%;
- 
+}
+.tabskillbox1_img{
+  width: 10vw;
 }
 .tabskillbox2{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 55%;
   height: 100%;
 }
 .tabskillbox2_title{
@@ -652,14 +654,19 @@ footer{
     font-size: 5vw;
   }
   .mainbox1_profile_text_span_box{
+    
     width: 100%;
-    display: flex;
+    display: none;
+    flex-direction: column;
     justify-content: space-evenly;
   }
   .mainbox1_profile_text_span_img{
-    width: 15%;
+    margin-left: 3vw;
+    width: 5%;
+    margin-right: 3vw;
   }
   .mainbox1_profile_text_span{
+    margin-top: 2vw;
     font-size: 3vw;
   }
   .mainbox1_profile_text_span2,
@@ -722,6 +729,42 @@ footer{
   }
   .tabs{
     height: 80vh;
+  }
+  .text1{
+    font-size: 7vw;
+  }
+  .text2{
+    font-size: 3vw;
+  }
+  .section1_box2_title_text{
+    font-size: 5vw;
+  }
+  .tabskillcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .tabskillbox1{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 100%;
+  }
+  .tabskillbox1_img{
+    width: 15vw;
+  }
+  .tabskillbox2{
+    width: 90%;
+  }
+  .tabskillbox2_title{
+    font-size: 5vw;
+  }
+  .tabskillbox2_title_info{
+    font-size: 3.5vw;
+  }
+  .sliderimg {
+    width: 30vw;
+    margin-left: 10vw;
   }
 }
 

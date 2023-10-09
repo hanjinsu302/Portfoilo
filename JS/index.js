@@ -217,7 +217,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-const content2 = "나아갈 수 있는 길을 구현하고 해결 방안 공유하고 싶은 개발자.  <a>주니어 프론트 엔드 개발자 한진수 입니다.</a>";
+const content2 = "나아갈 수 있는 길을 구현하고 해결 방안 공유하고 싶은 개발자.  <a>프론트 엔드 개발자 한진수 입니다.</a>";
 const text2 = document.querySelector(".text2");
 text2.textContent = "";
 
