@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mainpage</title>
   <link rel="stylesheet" href="./CSS/index.css" />
   <link rel="stylesheet" href="./CSS/header.css" />
   <link rel="stylesheet" href="./CSS/project.css" />
@@ -16,6 +16,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="icon" href="./images/github_logo_icon_147285.png" />
 </head>
 
 <body>
@@ -41,9 +42,13 @@
               <img src="./images/home.png" class="modal_link_img" />
               Home
             </div>
-            <div onclick="scrollToPosition(810)" class="modal_content_link">
+            <div onclick="scrollToPosition(800)" class="modal_content_link">
               <img src="./images/import_contacts.png" class="modal_link_img" />
               About Me
+            </div>
+            <div onclick="scrollToPosition(1500)" class="modal_content_link">
+              <img src="./images/cogwheel.png" class="modal_link_img" />
+              Skill
             </div>
             <div onclick="scrollToPosition(2550)" class="modal_content_link">
               <img src="./images/header.png" class="modal_link_img" />
@@ -60,9 +65,13 @@
           <img class="header2box_img" src="./images/home.png" />
           Home
         </div>
-        <div onclick="scrollToPosition(810)" href="./page/aboutme.html" class="header2box_span">
+        <div onclick="scrollToPosition(800)" href="./page/aboutme.html" class="header2box_span">
           <img class="header2box_img" src="./images/import_contacts.png" />
           About Me
+        </div>
+        <div onclick="scrollToPosition(1500)" href="./page/aboutme.html" class="header2box_span">
+          <img class="header2box_img" src="./images/cogwheel.png" />
+          Skill
         </div>
         <div onclick="scrollToPosition(2550)" href="./page/project.html" class="header2box_span">
           <img class="header2box_img" src="./images/header.png" />
@@ -137,7 +146,7 @@
           <span class="mainbox2_text_box_span">Port-folio</span>
         </div>
         <div class="mainbox2_btn_box">
-          <div onclick="scrollToPosition(1450)" class="mainbox2_btn">My Skill</div>
+          <div onclick="scrollToPosition(1500)" class="mainbox2_btn">My Skill</div>
           <div onclick="scrollToPosition(2550)" class="mainbox2_btn">Project</div>
         </div>
       </div>
